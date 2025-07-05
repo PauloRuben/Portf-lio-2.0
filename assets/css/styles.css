@@ -738,7 +738,7 @@ body.dark-theme{
 
 /*RODAPE*/
 .footer{
-  background-image: url("/Portifolio 2.0/assets/img/DARK.gif");
+  background-image: url("/assets/img/DARK.gif");
   background-size: cover;        /* ou 'contain', se preferir */
   background-position: center ;    /* centraliza a imagem */
   background-repeat: no-repeat;

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <header class="header" id="header">
+            <nav class="nav_container">
+                <a href="index.html" class="nav__logo">João</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link">Início</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="sobre.html" class="nav__link">Sobre</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="portfolio.html" class="nav__link">Portfólio</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="contato.html" class="button">Contato</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-fill"></i>
+                    </div>
+                </div>
+
+                <div class="nav__actions">
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-apps-2-line"></i>
+                    </div>
+
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+
+            <section class="home section">
+                <div class="home__rectangle"></div>
+
+                <div class="home__container container grid">
+                    <div class="home__perfil perfil">
+                        <div class="perfil__content">
+                            <img src="assets/img/home-perfil.png" alt="image" class="perfil__img">
+                        </div>
+                    </div>
+
+                    <div class="home__content grid">
+                        <div class="home__data grid">
+                            <h1 class="home__name typing-effect">Paulo Ruben</h1>
+
+                            <h2 class="home__profession">Dev Fullstack & Visual Designer</h2>
+
+                            <div class="home__social">
+                                <a href="https://github.com/PauloRuben" target="_blank" class="home__social-link"><i class="ri-github-fill"></i></a>
+
+                                <a href="https://www.linkedin.com/in/paulo-ruben-meira-prado-7b6198318/" target="_blank" class="home__social-link"><i class="ri-linkedin-box-fill"></i></a>
+
+                                <a href="https://dribbble.com/paulo-ruben" target="_blank" class="home__social-link"><i class="ri-dribbble-line"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="spline">
+                            <spline-viewer url="https://prod.spline.design/TeJJiMsUxTuvC27D/scene.splinecode"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAANCAYAAADISGwcAAAG1ElEQVR4AQCBAH7/AIeHgQSHh4EDh4eBAYeHgQCIh4AAiIeAAImHgAOJh38LiYd/F4qHfyeKh345i4d+TouHfWKLh310jId9goyHfYyMh3yQjId8joyHfIaLiHx5i4h8aIuIfFWKiXxBiol9LomJfRyJin0NiIp9AYiKfQCIin0AiIp9AIeKfQCHi30AAIEAfv8Ah4eBDoeHgQ2Ih4AMiIeAC4iHgAuJh4ANiYd/E4qHfx2Kh38riod+PIuGflGLhn1mjIZ9fIyGfY+Mh32fjId8qYyHfK2Mh3yrjId8o4yHfJaMiHyEi4h8cIuIfFuKiXxHiol8NImJfSSJin0XiYp9DYiKfQaIin0CiIp9AIiKfQAAgQB+/wCIh4AYiIeAF4mHgBeJh4AYiYd/GoqHfx+Khn8oioZ+NYuGfkaLhn5ajIZ9cYyGfYqNhn2hjYZ8to2GfMeNhnzTjYZ82I2He9WNh3vNjYd7vo2He6yMiHuWjIh8f4uIfGmLiXxViol8Q4qJfDSKiXwpiYp8IYmKfBuJin0YiYp9FgCBAH7/AIqGfxWKhn8WioZ/F4qGfxqLhn4fi4Z+J4uGfjOMhn1DjIZ9WI2GfXCNhnyKjoZ8po6GfMCOhnvXj4Z76Y+Ge/aPhnv7j4Z7+I6Ge++Ohnvfjod7y46He7ONh3uajYh7goyIe2uMiHtXi4h7RouJezmLiXwviol8KYqJfCSKiXwiAIEAfv8Ai4Z+B4uGfgiMhn4KjIZ9D4yGfRaNhn0hjYV9MY6FfESOhXxcj4V8d4+Fe5SPhXuykIV6zpCFeueQhXr6kIV6/5CFev+QhXn/kIZ5/pCGee2QhnnXj4Z6vY+HeqKOh3qIjod6bo6IeliNiHpGjYh6N4yIeyyMiHskjIh7H4yIexwAgQB+/wCNhnwAjYV8AI6FfACOhXwDjoV8DI+FexiPhXsqkIV7P5CFelmQhXp2kYV6lZGFebSShHnRkoR56pKFef6ShXj/koV4/5KFeP+ShXj/koV47JKGeNWRhni5kYZ4nZCGeICQh3llkId5To+HeTqPh3kqjoh5Ho6IeRWOiHkQjoh5DQCBAH7/AI+FewCPhXsAkIV7AJCFegGQhXoLkYV6GJGFeiqShXlAkoR5WpKEeHiThHiXk4R4tpSEd9KUhHfrlIR3/pSEd/+UhHf/lIR3/5SFd/uUhXfnlIV3zpOFd7KThXeVkoZ3eJKGd1yShndEkYd4MJGHeCCQh3gUkId4C5CHeAaQh3gDAIEAfv8AkYV5A5GFeQWShXkIkoV5DpKFeBeThXgkk4R4NZSEd0qUhHdjlIR3f5WEdpyVhHa6loR21ZaEdeyWhHX9loR1/5aEdf+WhHX/loR19paEdeKWhXXJlYV1rZWFdZCUhXV0lIZ2WpSGdkOThnYwk4Z2IZOGdhWSh3YOkod2CZKHdgYAgQB+/wCThXcVk4V3FpOFdxmUhXcelIV3JZSEdjCVhHY/lYR2UpaEdWiWhHWCl4R1nJeEdLeYhHTQmIR05ZiEdPSYhHP9mIRz/piEc/iYhHPqmIRz15iEc7+XhXOkl4V0iZaFdG+WhXRXlYZ0Q5WGdDKVhnUllIZ1HJSGdRWUhnURlIZ1EACBAH7/AJWFdhqVhXUalYV1HJWFdR+WhXUkloR1LZaEdDmXhHRJl4R0XJiEc3KYhHOKmYRzoZmEcreZhHLKmoNy2JqEct+ahHLfmoRy2ZqEcsyZhHK6mYRypJmEcoyYhXJzmIVyXJiFc0iXhXM2l4ZzKZaGcx+WhnMYloZzFJaGcxGWhnMQAIEAfv8AloV0CJaFdAiWhXQIl4V0CpeFdA2XhXMTmIRzHJiEcymZhHI5mYRyTJqEcmCahHF1moRxiZuEcZmbhHGlm4RxrJuEcKybhHCmm4RwmpuEcImahHF1moRxYJqFcUuZhXE3mYVxJpiFcRiYhnIOmIZyB5eGcgOXhnIBl4ZyAJeGcgAAgQB+/wCXhXMAl4VzAJeFcwCXhXMAmIVzAJiFcgCZhHIAmYRyAJqEcQyahHEcm4RxLpuEcEGbhHBTnIRwYZyEcGychHBynIRwcpyEcGychHBhnIRwUpuEcEGbhHAum4VwG5qFcAqahXAAmYVxAJmFcQCZhnEAmIZxAJiGcQCYhnEAmIZxAAGBAH7/AJeFcwCXhXMAmIVzAJiFcgCYhXIAmYVyAJmFcgCahHEAmoRxAJuEcQCbhHAMm4RwHZyEcC6chG88nIRvRpyEb0ydhG9MnIRvRpyEbzychG8unIRvHZuEbwybhXAAm4VwAJqFcACahXAAmYVwAJmGcACZhnEAmYZxAJiGcQCYhnEA6cwWmhZx77EAAAAASUVORK5CYII=" alt="Spline preview" /></spline-viewer>
+                        </div>
+
+                        <a href="assets/pdf/Currículo simples.pdf" download="" class="home__button button">Baixar Curriculo</a>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="services section">
+                <h2 class="section__title">Serviços<br>E outros</h2>
+
+                <div class="services__container container grid">
+                    <article class="services__card">
+                        <i class="ri-code-s-slash-line services__icon"></i>
+                        <h2 class="services__title">Web Developer</h2>
+                        <p class="services__description">Elegantes tipos de designs e interfaces sempre intuitivos e atendendo a necessidade do usuário final.</p>
+
+                        <button class="services__button button">Saiba mais</button>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <i class="ri-close-line services__modal-close"></i>
+
+                                <h2 class="services__modal-title">Web Developer</h2>
+
+                                <ul class="services__modal-list grid">
+                                    <li class="services__modal-item">Criação de Websites profissionais e com qualidade para clientes exigentes.</li>
+
+                                    <li class="services__modal-item">Eu sou Web Designer</li>
+
+                                    <li class="services__modal-item">Websites avançados para SEO</li>
+
+                                    <li class="services__modal-item">Resolução de problemas com alta perfomance para Páginas Web.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="services__card">
+                        <i class="ri-pen-nib-line services__icon"></i>
+                        <h2 class="services__title">Web Designer</h2>
+                        <p class="services__description">Elegantes tipos de designs e interfaces sempre intuitivos e atendendo a necessidade do usuário final.</p>
+
+                        <button class="services__button button">Saiba mais</button>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <i class="ri-close-line services__modal-close"></i>
+
+                                <h2 class="services__modal-title">Web Designer</h2>
+
+                                <ul class="services__modal-list grid">
+                                    <li class="services__modal-item">Criação de Websites profissionais e com qualidade para clientes exigentes.</li>
+
+                                    <li class="services__modal-item">Eu sou Web Designer</li>
+
+                                    <li class="services__modal-item">Websites avançados para SEO</li>
+
+                                    <li class="services__modal-item">Resolução de problemas com alta perfomance para Páginas Web.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="services__card">
+                        <i class="ri-layout-2-line services__icon"></i>
+                        <h2 class="services__title">Interfaces UI/UX</h2>
+                        <p class="services__description">Elegantes tipos de designs e interfaces sempre intuitivos e atendendo a necessidade do usuário final.</p>
+
+                        <button class="services__button button">Saiba mais</button>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <i class="ri-close-line services__modal-close"></i>
+
+                                <h2 class="services__modal-title">Interfaces UI/UX</h2>
+
+                                <ul class="services__modal-list grid">
+                                    <li class="services__modal-item">Criação de Websites profissionais e com qualidade para clientes exigentes.</li>
+
+                                    <li class="services__modal-item">Eu sou Web Designer</li>
+
+                                    <li class="services__modal-item">Websites avançados para SEO</li>
+
+                                    <li class="services__modal-item">Resolução de problemas com alta perfomance para Páginas Web.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="work section">
+                <h2 class="section__title">Meus Projetos<br>Trabalhos Recentes</h2>
+
+                <div class="work__container container grid">
+                    <article class="work__card">
+                        <a href="https://restaurante-sabor-e-art.netlify.app/" target="_blank" class="work__link">
+                            <img src="assets/img/restaurante.png" alt="image" class="work__img">
+                            <i class="ri-arrow-right-circle-line work__icon"></i>
+                        </a>
+
+                        <h2 class="work__title">Cardápio De Restaurante</h2>
+                        <span class="work__subtitle">Versão Pro</span>
+                    </article>
+
+                    <article class="work__card">
+                        <a href="https://geek-gamer.netlify.app/" target="_blank" class="work__link">
+                            <img src="assets/img/E-commerce.png" alt="image" class="work__img">
+                            <i class="ri-arrow-right-circle-line work__icon"></i>
+                        </a>
+
+                        <h2 class="work__title">Cardápio De Restaurante</h2>
+                        <span class="work__subtitle">Versão Simples</span>
+                    </article>
+
+                    <article class="work__card">
+                        <a href="https://reelogiobr.netlify.app/" target="_blank" class="work__link">
+                            <img src="assets/img/Relogio.png" alt="image" class="work__img">
+                            <i class="ri-arrow-right-circle-line work__icon"></i>
+                        </a>
+
+                        <h2 class="work__title">Relógio personalizado</h2>
+                        <span class="work__subtitle">Feito utilizando JS</span>
+                    </article>
+
+                    <article class="work__card">
+                        <a href="https://catalogo-exemplo.netlify.app/" target="_blank" class="work__link">
+                            <img src="assets/img/SUPABASE.png" alt="image" class="work__img">
+                            <i class="ri-arrow-right-circle-line work__icon"></i>
+                        </a>
+
+                        <h2 class="work__title">Banco de Dados</h2>
+                        <span class="work__subtitle">Utilizando JS E SUPABASE</span>
+                    </article>
+
+                    <article class="work__card">
+                        <a href="https://imcpr.netlify.app/" target="_blank" class="work__link">
+                            <img src="assets/img/Sistema de IMC.png" alt="image" class="work__img">
+                            <i class="ri-arrow-right-circle-line work__icon"></i>
+                        </a>
+
+                        <h2 class="work__title">Sistema IMC(Simples)</h2>
+                        <span class="work__subtitle">Utilizando JS</span>
+                    </article>
+
+                    <article class="work__card">
+                        <a href="https://celularemul.netlify.app/" target="_blank" class="work__link">
+                            <img src="assets/img/EMU.png" alt="image" class="work__img">
+                            <i class="ri-arrow-right-circle-line work__icon"></i>
+                        </a>
+
+                        <h2 class="work__title">"Emulador" De celular Web</h2>
+                        <span class="work__subtitle">UX/UI</span>
+                    </article>
+                </div>
+            </section>
+
+
+            <section class="testimonial section">
+                <h2 class="section__title">
+                    Depoimentos<br>
+                    Sobre mim
+                </h2>
+
+            <div class="testimonial__container container">
+                <div class="testimonial__swiper swiper">
+                    <div class="swiper-wrapper">
+                        <article class="testimonial__card swiper-slide">
+                            <div class="testimonial__border">
+                                <img src="assets/img/perfil.png" alt="image" class="testimonial__img">
+                            </div>
+
+                            <h2 class="testimonial__name">Jennifer Will</h2>
+                            <p class="testimonial__description">Contratei um projeto e os serviços foram de qualidade, o trabalho entregue é de bom conteúdo, excelente trabalho.</p>
+                        </article>
+
+                        <article class="testimonial__card swiper-slide">
+                            <div class="testimonial__border">
+                                <img src="assets/img/perfil2.png" alt="image" class="testimonial__img">
+                            </div>
+
+                            <h2 class="testimonial__name">Robert John</h2>
+                            <p class="testimonial__description">Contratei um projeto e os serviços foram de qualidade, o trabalho entregue é de bom conteúdo, excelente trabalho.</p>
+                        </article>
+
+                        <article class="testimonial__card swiper-slide">
+                            <div class="testimonial__border">
+                                <img src="assets/img/perfil3.png" alt="image" class="testimonial__img">
+                            </div>
+
+                            <h2 class="testimonial__name">Lauren Stone</h2>
+                            <p class="testimonial__description">Contratei um projeto e os serviços foram de qualidade, o trabalho entregue é de bom conteúdo, excelente trabalho.</p>
+                        </article>
+
+                        <article class="testimonial__card swiper-slide">
+                            <div class="testimonial__border">
+                                <img src="assets/img/perfil4.png" alt="image" class="testimonial__img">
+                            </div>
+
+                            <h2 class="testimonial__name">Louis Martin</h2>
+                            <p class="testimonial__description">Contratei um projeto e os serviços foram de qualidade, o trabalho entregue é de bom conteúdo, excelente trabalho.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>    
+            </section>
+
+
+            <section class="contact section">
+                <div class="contact__container container grid">
+                    <h2 class="section__title typing-effect">Vamos falar sobre o seu projeto?</h2>
+
+                    <a href="contato.html" class="contact__button button">Entre em Contato</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="mensage">
+                <h2 class="typing-effect">Você chegou na fogueira. Descanse um pouco Amigo</h2>
+            </div>
+            <div class="footer__container container grid">
+                <div class="footer__content grid">
+                    <a href="index.html" class="footer__logo">Paulo Ruben</a>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="sobre.html" class="footer__link">Sobre</a>
+                        </li>
+
+                        <li>
+                            <a href="portfolio.html" class="footer__link">Portfólio</a>
+                        </li>
+
+                        <li>
+                            <a href="contato.html" class="footer__link">Contato</a>
+                        </li>
+                    </ul>
+
+                    <div class="footer__social">
+                        <a href="https://www.instagram.com/vulgo_rubaun/" target="_blank" rel="noopener" class="footer__social-link">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/paulo-ruben-meira-prado-7b6198318/" target="_blank" rel="noopener" class="footer__social-link">
+                            <i class="ri-linkedin-box-fill"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <span class="footer__copy">
+                    &#169; Todos os direitos reservados By Paulo Ruben .
+                </span>
+            </div>
+        </footer>
+
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line"></i>
+        </a>
+        
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.22/build/spline-viewer.js" async></script>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        <script src="assets/js/index.js"></script>
+    </body>
+</html>

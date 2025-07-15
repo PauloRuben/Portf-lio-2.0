@@ -205,10 +205,21 @@ body.dark-theme{
 }
 
 .spline{
+   position: relative; /* necessário para posicionamento absoluto da tag */
   width: 500px;
   height: 300px;
   margin-bottom: 2rem;
 }
+.tag{
+  position: absolute;
+  bottom: 10px;
+  left: 340px;
+  height: 50px;
+  width: 140px;
+  background-color: var(--body-color);
+  z-index: 10; /* garante que fique acima */
+}
+
 .main{
   margin-bottom: 125px;
   overflow: hidden;
@@ -738,7 +749,7 @@ body.dark-theme{
 
 /*RODAPE*/
 .footer{
-  background-image: url("/assets/img/DARK.gif");
+  background-image: url("/Portifolio 2.0/assets/img/DARK.gif");
   background-size: cover;        /* ou 'contain', se preferir */
   background-position: center ;    /* centraliza a imagem */
   background-repeat: no-repeat;
